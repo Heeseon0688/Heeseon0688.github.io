@@ -156,7 +156,7 @@ section h2 { margin: 0 0 46px; font-size: clamp(34px, 4vw, 64px); line-height: 1
 .edit-note { margin-top: 20px; color: var(--muted); font-size: 12px; }
 
 .timeline { border-top: 1px solid var(--line); }
-.timeline article { display: grid; grid-template-columns: 210px 1fr; gap: 42px; padding: 34px 0; border-bottom: 1px solid var(--line); }
+.timeline article { display: grid; grid-template-columns: 210px 1fr; gap: 42px; padding: 34px 0; border-bottom: 1px solid var(--line); opacity: 1 !important; transform: none !important; }
 .time { color: var(--muted); }
 .timeline h3 { margin: 0 0 9px; font-size: 24px; letter-spacing: -.03em; }
 .timeline p { margin: 0; color: var(--muted); max-width: 820px; }
