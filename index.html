@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Heeseon Im — AI & Software Engineer portfolio" />
+  <meta name="theme-color" content="#f5f2eb" />
+  <meta property="og:title" content="Heeseon Im — Portfolio" />
+  <meta property="og:description" content="AI · Computer Vision · Embedded Systems · Wireless Networking" />
+  <meta property="og:type" content="website" />
+  <title>Heeseon Im — AI & Software Engineer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Go to top">HEESEON IM</a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#projects" data-ko="프로젝트" data-en="PROJECTS">프로젝트</a>
+      <a href="#research" data-ko="연구" data-en="RESEARCH">연구</a>
+      <a href="#experience" data-ko="경력" data-en="EXPERIENCE">경력</a>
+      <a href="#skills" data-ko="기술" data-en="SKILLS">기술</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-button" id="langToggle" type="button" aria-label="Switch language">EN</button>
+      <button class="theme-button" id="themeToggle" type="button" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <p class="eyebrow">AI & SOFTWARE ENGINEER — PORTFOLIO</p>
+      <div class="hero-grid">
+        <div>
+          <h1 class="hero-title">
+            <span data-ko="AI와 임베디드를" data-en="Building software">AI와 임베디드를</span><br />
+            <span class="accent" data-ko="연결하는 엔지니어." data-en="across AI and embedded systems.">연결하는 엔지니어.</span>
+          </h1>
+          <p class="hero-copy" data-ko="무선 네트워크 연구에서 시작해 STM32·Linux 기반 펌웨어와 컴퓨터 비전, AI 애플리케이션까지 확장해 왔습니다. 모델 자체보다 실제 시스템 안에서 데이터를 받고, 판단하고, 동작하게 만드는 소프트웨어를 만드는 데 관심이 있습니다." data-en="My work spans wireless-network research, STM32/Linux firmware, computer vision, and AI applications. I focus on the software around models: receiving real-world data, making decisions, and turning those decisions into reliable system behavior.">
+            무선 네트워크 연구에서 시작해 STM32·Linux 기반 펌웨어와 컴퓨터 비전, AI 애플리케이션까지 확장해 왔습니다. 모델 자체보다 실제 시스템 안에서 데이터를 받고, 판단하고, 동작하게 만드는 소프트웨어를 만드는 데 관심이 있습니다.
+          </p>
+        </div>
+
+        <aside class="hero-card">
+          <div class="avatar" aria-hidden="true">HI</div>
+          <div>
+            <p class="hero-name">임희선 <span>Heeseon Im</span></p>
+            <p class="muted">M.S. Computer Science & Engineering</p>
+            <p class="muted">C/C++ · Python · Linux · Computer Vision</p>
+          </div>
+          <div class="hero-links">
+            <a id="githubLink" href="https://github.com/Heeseon0688" target="_blank" rel="noreferrer">GITHUB ↗</a>
+            <a id="emailLink" href="#">EMAIL ↗</a>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hero-stats" aria-label="Portfolio highlights">
+        <div><strong>3</strong><span data-ko="무선 네트워크 연구 주제" data-en="wireless research tracks">무선 네트워크 연구 주제</span></div>
+        <div><strong>C/C++</strong><span data-ko="펌웨어·시뮬레이터" data-en="firmware & simulation">펌웨어·시뮬레이터</span></div>
+        <div><strong>AI/CV</strong><span data-ko="YOLO·OCR·LLM" data-en="YOLO · OCR · LLM">YOLO·OCR·LLM</span></div>
+      </div>
+    </section>
+
+    <section class="manifesto section-shell" id="principles">
+      <div class="section-label">01 — PRINCIPLES</div>
+      <h2 data-ko="연구에서 제품까지, 같은 기준으로 개발합니다." data-en="From research to products, I build by the same principles.">연구에서 제품까지, 같은 기준으로 개발합니다.</h2>
+      <div class="principle-grid">
+        <article>
+          <span>01</span>
+          <h3 data-ko="측정 가능한 문제로 바꾼다" data-en="Turn ambiguity into measurable problems">측정 가능한 문제로 바꾼다</h3>
+          <p data-ko="성능·정확도·지연·실패 조건을 먼저 정의하고, 결과를 비교할 수 있는 형태로 구현합니다." data-en="I define performance, accuracy, latency, and failure conditions first, then implement systems that can be evaluated against them.">성능·정확도·지연·실패 조건을 먼저 정의하고, 결과를 비교할 수 있는 형태로 구현합니다.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3 data-ko="모델보다 시스템을 본다" data-en="Think beyond the model">모델보다 시스템을 본다</h3>
+          <p data-ko="AI 모델을 단독으로 보지 않고 데이터 입력, 후처리, API, UI, 배포까지 하나의 흐름으로 설계합니다." data-en="I treat AI as part of a full system: data intake, post-processing, APIs, UI, and deployment all matter.">AI 모델을 단독으로 보지 않고 데이터 입력, 후처리, API, UI, 배포까지 하나의 흐름으로 설계합니다.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3 data-ko="하드웨어 제약을 코드로 해결한다" data-en="Solve hardware constraints in software">하드웨어 제약을 코드로 해결한다</h3>
+          <p data-ko="MCU 메모리, 통신, UI, 부팅 과정처럼 제약이 큰 환경에서도 원인을 추적하고 안정적으로 동작하도록 만듭니다." data-en="In constrained environments—MCU memory, communication, UI, boot flows—I trace root causes and design for reliable behavior.">MCU 메모리, 통신, UI, 부팅 과정처럼 제약이 큰 환경에서도 원인을 추적하고 안정적으로 동작하도록 만듭니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section-shell" id="projects">
+      <div class="section-label">02 — SELECTED PROJECTS</div>
+      <h2 data-ko="선택한 프로젝트" data-en="Selected projects">선택한 프로젝트</h2>
+
+      <article class="project project-featured">
+        <div class="project-index">P01</div>
+        <div class="project-body">
+          <div class="project-meta"><span>2026 — IN PROGRESS</span><span>COMPUTER VISION · KNOWLEDGE GRAPH</span></div>
+          <h3 data-ko="P&ID 도면 → 지식그래프 자동 변환 파이프라인" data-en="P&ID drawings → automated knowledge-graph pipeline">P&ID 도면 → 지식그래프 자동 변환 파이프라인</h3>
+          <p data-ko="산업 도면에서 밸브·펌프·탱크·계측기 심볼을 탐지하고, OCR과 배관 연결 관계를 결합해 그래프로 변환하는 파이프라인을 설계하고 있습니다. 최종 목표는 고장 상황에서 영향을 받는 설비와 차단 밸브를 그래프 기반으로 추론하고 LLM이 설명하도록 만드는 것입니다." data-en="Designing a pipeline that detects valves, pumps, tanks, and instruments in industrial drawings, combines OCR with pipe connectivity, and converts the result into a graph. The goal is graph-based fault-impact reasoning and LLM explanations for isolation actions.">
+            산업 도면에서 밸브·펌프·탱크·계측기 심볼을 탐지하고, OCR과 배관 연결 관계를 결합해 그래프로 변환하는 파이프라인을 설계하고 있습니다. 최종 목표는 고장 상황에서 영향을 받는 설비와 차단 밸브를 그래프 기반으로 추론하고 LLM이 설명하도록 만드는 것입니다.
+          </p>
+          <div class="project-decisions">
+            <div><b>DETECTION</b><span>YOLOv8 · symbol classes</span></div>
+            <div><b>STRUCTURE</b><span>OpenCV · pipe connectivity</span></div>
+            <div><b>TEXT</b><span>OCR · rotated labels</span></div>
+            <div><b>REASONING</b><span>Ontology · Knowledge Graph · GraphRAG</span></div>
+          </div>
+          <div class="tags"><span>Python</span><span>YOLOv8</span><span>OpenCV</span><span>OCR</span><span>GraphRAG</span></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-index">P02</div>
+        <div class="project-body">
+          <div class="project-meta"><span>2024.09</span><span>COMPUTER VISION</span></div>
+          <h3 data-ko="Motorshot — 오토바이 안전 행동 탐지" data-en="Motorshot — motorcycle safety-behavior detection">Motorshot — 오토바이 안전 행동 탐지</h3>
+          <p data-ko="YOLOv8 기반으로 헬멧 미착용과 위협 운전 상황을 탐지하는 컴퓨터 비전 프로젝트입니다. 데이터셋 구성부터 학습·평가까지 직접 수행했습니다." data-en="A YOLOv8 computer-vision project for detecting missing helmets and threatening riding behavior, covering dataset preparation, training, and evaluation.">YOLOv8 기반으로 헬멧 미착용과 위협 운전 상황을 탐지하는 컴퓨터 비전 프로젝트입니다. 데이터셋 구성부터 학습·평가까지 직접 수행했습니다.</p>
+          <div class="tags"><span>Python</span><span>YOLOv8</span><span>Computer Vision</span></div>
+          <a class="project-link" href="https://github.com/Heeseon0688/Motorshot_frontend_Project" target="_blank" rel="noreferrer">VIEW ON GITHUB ↗</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-index">P03</div>
+        <div class="project-body">
+          <div class="project-meta"><span>2024.08</span><span>LLM APPLICATION</span></div>
+          <h3 data-ko="의사소통 AI 챗봇" data-en="Medical communication AI chatbot">의사소통 AI 챗봇</h3>
+          <p data-ko="증상 정보를 바탕으로 질환 후보와 대응 정보를 제공하는 챗봇을 구현했습니다. GPT-NeoX 계열 한국어 모델을 사용하고 FastAPI, MongoDB, React로 서비스 흐름을 구성했습니다." data-en="Built a chatbot that turns symptom descriptions into candidate conditions and response guidance, using a Korean GPT-NeoX-family model with FastAPI, MongoDB, and React.">증상 정보를 바탕으로 질환 후보와 대응 정보를 제공하는 챗봇을 구현했습니다. GPT-NeoX 계열 한국어 모델을 사용하고 FastAPI, MongoDB, React로 서비스 흐름을 구성했습니다.</p>
+          <div class="tags"><span>Python</span><span>FastAPI</span><span>MongoDB</span><span>React</span><span>LLM</span></div>
+          <a class="project-link" href="https://github.com/Heeseon0688/DoctorChat_frontend_Project" target="_blank" rel="noreferrer">VIEW ON GITHUB ↗</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-index">P04</div>
+        <div class="project-body">
+          <div class="project-meta"><span>2024.07</span><span>ANDROID · PUBLIC DATA</span></div>
+          <h3 data-ko="PLAN UP — 취업 일정 관리 앱" data-en="PLAN UP — job-search schedule app">PLAN UP — 취업 일정 관리 앱</h3>
+          <p data-ko="채용 일정을 모아 관리하는 안드로이드 앱을 개발해 Google Play에 배포했습니다. 고용노동부 공공데이터 활용 공모전 1차에 선정되었습니다." data-en="Developed and released an Android app on Google Play for managing recruiting schedules; selected in the first round of a Ministry of Employment and Labor public-data competition.">채용 일정을 모아 관리하는 안드로이드 앱을 개발해 Google Play에 배포했습니다. 고용노동부 공공데이터 활용 공모전 1차에 선정되었습니다.</p>
+          <div class="tags"><span>Android</span><span>Public API</span><span>Google Play</span></div>
+          <a class="project-link" href="https://github.com/Heeseon0688/PlanUP_frontend_Project" target="_blank" rel="noreferrer">VIEW ON GITHUB ↗</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-index">P05</div>
+        <div class="project-body">
+          <div class="project-meta"><span>2022.12</span><span>EDGE AI</span></div>
+          <h3 data-ko="Jetson Nano 실시간 도로 인식" data-en="Real-time road perception on Jetson Nano">Jetson Nano 실시간 도로 인식</h3>
+          <p data-ko="Jetson Nano에서 YOLO와 StrongSORT를 이용한 객체 탐지·추적 파이프라인을 구현했습니다. 미래자동차 인력양성 과정에서 우수상을 수상했습니다." data-en="Implemented real-time object detection and tracking with YOLO and StrongSORT on Jetson Nano; received an excellence award in a future-mobility training program.">Jetson Nano에서 YOLO와 StrongSORT를 이용한 객체 탐지·추적 파이프라인을 구현했습니다. 미래자동차 인력양성 과정에서 우수상을 수상했습니다.</p>
+          <div class="tags"><span>Jetson Nano</span><span>YOLO</span><span>StrongSORT</span><span>Edge AI</span></div>
+          <a class="project-link" href="https://github.com/Heeseon0688/Future_Automobile_Project" target="_blank" rel="noreferrer">VIEW ON GITHUB ↗</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="research section-shell" id="research">
+      <div class="section-label">03 — RESEARCH</div>
+      <h2 data-ko="무선 네트워크 · 강화학습 연구" data-en="Wireless networking · reinforcement-learning research">무선 네트워크 · 강화학습 연구</h2>
+      <p class="section-intro" data-ko="서강대학교 대학원에서 밀집 WLAN 환경의 공간 재사용(Spatial Reuse)을 강화학습 기반으로 개선하는 연구를 수행했습니다. C/C++ 시뮬레이터를 직접 구현해 RSSI, 채널, 송신전력과 같은 상태를 기반으로 분산 의사결정을 실험했습니다." data-en="In graduate school, I researched reinforcement-learning approaches to spatial reuse in dense WLANs. I implemented C/C++ simulators to study distributed decisions based on state such as RSSI, channel conditions, and transmit power.">서강대학교 대학원에서 밀집 WLAN 환경의 공간 재사용(Spatial Reuse)을 강화학습 기반으로 개선하는 연구를 수행했습니다. C/C++ 시뮬레이터를 직접 구현해 RSSI, 채널, 송신전력과 같은 상태를 기반으로 분산 의사결정을 실험했습니다.</p>
+
+      <div class="research-list">
+        <article>
+          <span class="paper-no">R01</span>
+          <div><h3><a class="paper-link" href="https://ieeexplore.ieee.org/document/10309995" target="_blank" rel="noreferrer">Improving Spatial Reuse of Wireless LANs Using Contextual Bandits ↗</a></h3><p data-ko="실시간 관측 정보를 컨텍스트로 사용해 전송 의사결정을 최적화하는 접근." data-en="A contextual-bandit approach to optimizing transmission decisions from real-time observations.">실시간 관측 정보를 컨텍스트로 사용해 전송 의사결정을 최적화하는 접근.</p></div>
+        </article>
+        <article>
+          <span class="paper-no">R02</span>
+          <div><h3><a class="paper-link" href="https://dcollection.sogang.ac.kr/dcollection/srch/srchDetail/000000076357" target="_blank" rel="noreferrer">Improving Spatial Reuse of Wireless LANs using Multi-Armed Bandit ↗</a></h3><p data-ko="밀집 무선 환경에서 분산 노드가 학습을 통해 전송 전략을 선택하도록 설계." data-en="Distributed nodes learn transmission strategies in dense wireless environments using a multi-armed-bandit formulation.">밀집 무선 환경에서 분산 노드가 학습을 통해 전송 전략을 선택하도록 설계.</p></div>
+        </article>
+        <article>
+          <span class="paper-no">R03</span>
+          <div><h3><a class="paper-link" href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11047696" target="_blank" rel="noreferrer">A Multi-channel-based Transmit Power Allocation Method for Improving Spatial Reuse in Dense Wireless LANs ↗</a></h3><p data-ko="채널 선택과 송신 전력 결정을 함께 다루는 다중 채널 공간 재사용 연구." data-en="Jointly studies channel selection and transmit-power decisions for multi-channel spatial reuse.">채널 선택과 송신 전력 결정을 함께 다루는 다중 채널 공간 재사용 연구.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience section-shell" id="experience">
+      <div class="section-label">04 — EXPERIENCE & EDUCATION</div>
+      <h2 data-ko="경력과 교육" data-en="Experience & education">경력과 교육</h2>
+      <div class="timeline">
+        <article>
+          <div class="time">2025.03 — 2026.04</div>
+          <div class="timeline-body">
+            <h3 data-ko="Firmware Developer · 제노레이" data-en="Firmware Developer · Genoray">Firmware Developer · 제노레이</h3>
+            <p data-ko="의료 영상 장비용 STM32 펌웨어와 Linux/C++ UI 소프트웨어 개발. Bootloader, CRC, QSPI, USB MSC, TouchGFX, Qt, LVGL 기반 기능 개발 및 유지보수." data-en="Developed STM32 firmware and Linux/C++ UI software for medical-imaging systems, including bootloader, CRC, QSPI, USB MSC, TouchGFX, Qt, and LVGL work.">의료 영상 장비용 STM32 펌웨어와 Linux/C++ UI 소프트웨어 개발. Bootloader, CRC, QSPI, USB MSC, TouchGFX, Qt, LVGL 기반 기능 개발 및 유지보수.</p>
+          </div>
+        </article>
+        <article>
+          <div class="time">M.S.</div>
+          <div class="timeline-body">
+            <h3 data-ko="서강대학교 · 컴퓨터공학" data-en="Sogang University · Computer Science & Engineering">서강대학교 · 컴퓨터공학</h3>
+            <p data-ko="Intelligent Connected Systems Lab · 무선 네트워크 / 강화학습 / C/C++ 시뮬레이션" data-en="Intelligent Connected Systems Lab · wireless networking / reinforcement learning / C/C++ simulation">Intelligent Connected Systems Lab · 무선 네트워크 / 강화학습 / C/C++ 시뮬레이션</p>
+          </div>
+        </article>
+        <article>
+          <div class="time">B.S.</div>
+          <div class="timeline-body">
+            <h3 data-ko="한신대학교 · 정보통신" data-en="Hanshin University · Information Science & Telecommunications">한신대학교 · 정보통신</h3>
+            <p data-ko="소프트웨어, 네트워크, 임베디드 시스템 기반 전공." data-en="Foundation in software, networking, and embedded systems.">소프트웨어, 네트워크, 임베디드 시스템 기반 전공.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills section-shell" id="skills">
+      <div class="section-label">05 — TECHNICAL</div>
+      <h2 data-ko="기술 스택" data-en="Technical stack">기술 스택</h2>
+      <div class="skill-grid">
+        <article><h3>LANGUAGES</h3><p>C · C++ · Python · Java · JavaScript</p></article>
+        <article><h3>AI / CV</h3><p>YOLO · OpenCV · OCR · LLM · RAG · Reinforcement Learning</p></article>
+        <article><h3>EMBEDDED</h3><p>STM32 · ATmega · Bootloader · QSPI · USB MSC · TouchGFX · LVGL</p></article>
+        <article><h3>APPLICATION</h3><p>FastAPI · React · MongoDB · Qt · Android</p></article>
+        <article><h3>PLATFORM</h3><p>Linux · Docker · Kubernetes · Git</p></article>
+        <article><h3>RESEARCH</h3><p>WLAN · Spatial Reuse · Contextual Bandit · Multi-Armed Bandit</p></article>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact">
+      <div class="section-label">06 — CONTACT</div>
+      <div class="contact-grid">
+        <div>
+          <h2 data-ko="문제를 시스템으로 풀어내는 엔지니어를 찾고 있다면." data-en="If you need an engineer who turns problems into working systems.">문제를 시스템으로 풀어내는 엔지니어를 찾고 있다면.</h2>
+          <p data-ko="AI 응용, 컴퓨터 비전, C/C++ 시스템 소프트웨어, 임베디드 개발 기회에 열려 있습니다." data-en="Open to opportunities in AI applications, computer vision, C/C++ systems software, and embedded development.">AI 응용, 컴퓨터 비전, C/C++ 시스템 소프트웨어, 임베디드 개발 기회에 열려 있습니다.</p>
+        </div>
+        <div class="contact-links">
+          <a id="githubLink2" href="https://github.com/Heeseon0688" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a id="emailLink2" href="#">EMAIL ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> HEESEON IM</span>
+    <a href="#top">↑ TOP</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
