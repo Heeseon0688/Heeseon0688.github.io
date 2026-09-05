@@ -25,28 +25,6 @@ function applyProfile() {
   });
 }
 
-function addAiTraining() {
-  const timeline = document.querySelector("#experience .timeline");
-  if (!timeline || document.getElementById("aiTrainingItem")) return;
-
-  const article = document.createElement("article");
-  article.id = "aiTrainingItem";
-  article.innerHTML = `
-    <div class="time">2024.03 — 2024.09</div>
-    <div class="timeline-body">
-      <h3 data-ko="AI 기반 챗봇 및 OCR 개발 전문가 과정 · 코리아IT아카데미" data-en="AI Chatbot & OCR Development Professional Program · Korea IT Academy">AI 기반 챗봇 및 OCR 개발 전문가 과정 · 코리아IT아카데미</h3>
-      <p data-ko="Python 기반 AI·컴퓨터 비전·백엔드·웹 개발을 집중적으로 학습했습니다. 과정에서 MotorShot, 의료 상담 AI 챗봇, PLAN UP, Mind Glow 프로젝트를 수행하며 YOLO, LLM, OCR, FastAPI, MongoDB, React, Android를 실제 애플리케이션에 적용했습니다." data-en="Completed intensive training in Python-based AI, computer vision, backend, and web development. Built MotorShot, a medical consultation AI chatbot, PLAN UP, and Mind Glow while applying YOLO, LLM, OCR, FastAPI, MongoDB, React, and Android in practical applications.">Python 기반 AI·컴퓨터 비전·백엔드·웹 개발을 집중적으로 학습했습니다. 과정에서 MotorShot, 의료 상담 AI 챗봇, PLAN UP, Mind Glow 프로젝트를 수행하며 YOLO, LLM, OCR, FastAPI, MongoDB, React, Android를 실제 애플리케이션에 적용했습니다.</p>
-    </div>
-  `;
-
-  const firstItem = timeline.querySelector("article");
-  if (firstItem?.nextSibling) {
-    timeline.insertBefore(article, firstItem.nextSibling);
-  } else {
-    timeline.appendChild(article);
-  }
-}
-
 function applyLanguage() {
   document.documentElement.lang = language;
   document.querySelectorAll("[data-ko][data-en]").forEach((el) => {
@@ -71,8 +49,6 @@ themeToggle.addEventListener("click", () => {
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
-
-addAiTraining();
 
 const targets = document.querySelectorAll(".project, .principle-grid article, .research-list article, .timeline article, .skill-grid article");
 targets.forEach((el) => el.classList.add("reveal"));
