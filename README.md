@@ -1,3 +1,25 @@
-# Heeseon Im Portfolio
+# Heeseon Im — Portfolio
 
-Personal portfolio website hosted with GitHub Pages.
+[포트폴리오 보기](https://heeseon0688.github.io/)
+
+임베디드 시스템, AI, 애플리케이션 개발 경험과 연구를 소개하는 개인 포트폴리오입니다.
+아이보리·딥그린 디자인, 한국어/영어 전환, 다크 모드, 프로젝트 필터를 제공합니다.
+
+## 로컬 미리보기
+
+별도 빌드나 패키지 설치 없이 실행할 수 있습니다.
+
+```sh
+python3 -m http.server 8000
+```
+
+브라우저에서 `http://localhost:8000`에 접속합니다.
+
+## 수정
+
+- `index.html`: 소개, 프로젝트, 연구, 경력과 링크. `data-ko`와 `data-en`에 두 언어의 문구를 함께 수정합니다.
+- `style.css`: 색상, 레이아웃과 반응형 디자인.
+- `script.js`: 언어·테마 전환, 프로젝트 필터와 모바일 메뉴.
+- `assets/`: 프로젝트 주제를 표현하는 SVG 일러스트와 파비콘. 실제 제품 화면 캡처가 아닙니다.
+
+`main` 브랜치에 반영하면 GitHub Pages에서 자동 배포됩니다.
