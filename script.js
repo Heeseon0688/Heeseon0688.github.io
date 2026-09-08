@@ -11,7 +11,7 @@
   const menuToggle = document.getElementById("menuToggle");
   const nav = document.getElementById("mainNav");
   let language = preference.get("portfolio-language") === "en" ? "en" : "ko";
-  let theme = preference.get("portfolio-theme") === "dark" ? "dark" : "light";
+  let theme = preference.get("portfolio-theme") === "light" ? "light" : "dark";
   let filter = "all";
   const viewer = document.getElementById("imageViewer");
   let activeGallery = null;
@@ -25,6 +25,7 @@
     langToggle.setAttribute("aria-label", en ? "한국어로 전환" : "Switch to English");
     themeToggle.setAttribute("aria-label", en ? `Switch to ${dark ? "light" : "dark"} mode` : `${dark ? "라이트" : "다크"} 모드로 전환`);
     themeToggle.setAttribute("aria-pressed", String(dark));
+    themeToggle.title = themeToggle.getAttribute("aria-label");
     menuToggle.setAttribute("aria-label", en ? `${open ? "Close" : "Open"} menu` : `메뉴 ${open ? "닫기" : "열기"}`);
     nav.setAttribute("aria-label", en ? "Main navigation" : "주요 메뉴");
     document.querySelector(".project-filters").setAttribute("aria-label", en ? "Filter projects" : "프로젝트 필터");
@@ -41,7 +42,7 @@
   }
   function applyTheme() {
     root.dataset.theme = theme;
-    document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#17251e" : "#f7f8f2";
+    document.querySelector('meta[name="theme-color"]').content = getComputedStyle(root).getPropertyValue("--bg").trim();
     updateControlLabels();
   }
   function setMenu(open) {
