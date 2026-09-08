@@ -13,6 +13,9 @@
   let language = preference.get("portfolio-language") === "en" ? "en" : "ko";
   let theme = preference.get("portfolio-theme") === "dark" ? "dark" : "light";
   let filter = "all";
+  const viewer = document.getElementById("imageViewer");
+  let activeGallery = null;
+  let activeSlide = 0;
 
   function updateControlLabels() {
     const en = language === "en";
@@ -31,6 +34,9 @@
   function applyLanguage() {
     root.lang = language;
     document.querySelectorAll("[data-ko][data-en]").forEach(el => { el.textContent = el.dataset[language]; });
+    document.querySelectorAll("[data-alt-ko][data-alt-en]").forEach(el => { el.alt = el.dataset[language === "ko" ? "altKo" : "altEn"]; });
+    document.querySelectorAll("[data-label-ko][data-label-en]").forEach(el => { el.setAttribute("aria-label", el.dataset[language === "ko" ? "labelKo" : "labelEn"]); });
+    if (viewer.open) updateViewer();
     updateControlLabels();
   }
   function applyTheme() {
@@ -81,6 +87,65 @@
     filter = button.dataset.filter;
     applyFilter();
   }));
+  function slideInfo(gallery, index) {
+    const choices = [...gallery.querySelectorAll(".gallery-choice")];
+    const choice = choices[index];
+    const title = gallery.dataset[language === "ko" ? "titleKo" : "titleEn"];
+    const caption = choice.dataset[language === "ko" ? "captionKo" : "captionEn"];
+    return { choices, choice, title: `${title} — ${caption}` };
+  }
+  function selectSlide(gallery, index) {
+    const { choices, choice, title } = slideInfo(gallery, index);
+    const mainImage = gallery.querySelector(".gallery-image");
+    mainImage.src = choice.dataset.src;
+    mainImage.alt = title;
+    mainImage.dataset.altKo = `${gallery.dataset.titleKo} — ${choice.dataset.captionKo}`;
+    mainImage.dataset.altEn = `${gallery.dataset.titleEn} — ${choice.dataset.captionEn}`;
+    gallery.querySelector(".gallery-stage").href = choice.dataset.src;
+    choices.forEach((button, i) => button.setAttribute("aria-pressed", String(i === index)));
+  }
+  function updateViewer() {
+    if (!activeGallery) return;
+    const { choices, choice, title } = slideInfo(activeGallery, activeSlide);
+    document.getElementById("viewerImage").src = choice.dataset.src;
+    document.getElementById("viewerImage").alt = title;
+    document.getElementById("viewerTitle").textContent = title;
+    document.getElementById("viewerCounter").textContent = `${activeSlide + 1} / ${choices.length}`;
+    document.getElementById("viewerSource").href = activeGallery.closest(".project").querySelector(".repo-card").href + "#readme";
+    selectSlide(activeGallery, activeSlide);
+  }
+  function moveSlide(direction) {
+    if (!activeGallery) return;
+    const total = activeGallery.querySelectorAll(".gallery-choice").length;
+    activeSlide = (activeSlide + direction + total) % total;
+    updateViewer();
+  }
+  document.querySelectorAll(".project-gallery").forEach(gallery => {
+    gallery.querySelectorAll(".gallery-choice").forEach((button, index) => {
+      button.addEventListener("click", () => selectSlide(gallery, index));
+    });
+    gallery.querySelector(".gallery-stage").addEventListener("click", event => {
+      if (typeof viewer.showModal !== "function" || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      activeGallery = gallery;
+      activeSlide = [...gallery.querySelectorAll(".gallery-choice")].findIndex(button => button.getAttribute("aria-pressed") === "true");
+      updateViewer();
+      viewer.showModal();
+    });
+  });
+  document.getElementById("viewerPrev").addEventListener("click", () => moveSlide(-1));
+  document.getElementById("viewerNext").addEventListener("click", () => moveSlide(1));
+  viewer.addEventListener("keydown", event => {
+    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+      event.preventDefault();
+      moveSlide(event.key === "ArrowLeft" ? -1 : 1);
+    }
+  });
+  viewer.addEventListener("click", event => {
+    const rect = viewer.getBoundingClientRect();
+    if (event.target === viewer && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) viewer.close();
+  });
+  viewer.addEventListener("close", () => { activeGallery = null; });
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {

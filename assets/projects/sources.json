@@ -1,0 +1,147 @@
+{
+  "motorshot": {
+    "repo": "Motorshot_frontend_Project",
+    "slides": [
+      {
+        "src": "assets/projects/motorshot-cover.jpg",
+        "thumbnail": "assets/projects/motorshot-cover-thumb.jpg",
+        "ko": "발표 표지",
+        "en": "Presentation cover",
+        "source": "https://github.com/user-attachments/assets/dbe6ad9d-3a25-4e81-96e6-eda369a1c3eb",
+        "readmeImageIndex": 0
+      },
+      {
+        "src": "assets/projects/motorshot-screen.jpg",
+        "thumbnail": "assets/projects/motorshot-screen-thumb.jpg",
+        "ko": "서비스 화면",
+        "en": "Service interface",
+        "source": "https://github.com/user-attachments/assets/0a38604e-1b42-481b-9463-a95b5263eba3",
+        "readmeImageIndex": 6
+      },
+      {
+        "src": "assets/projects/motorshot-detection.jpg",
+        "thumbnail": "assets/projects/motorshot-detection-thumb.jpg",
+        "ko": "객체 탐지",
+        "en": "Object detection",
+        "source": "https://github.com/user-attachments/assets/1ac08f2a-b483-4684-aa6a-ca8adbc1f43e",
+        "readmeImageIndex": 12
+      }
+    ]
+  },
+  "chatbot": {
+    "repo": "DoctorChat_frontend_Project",
+    "slides": [
+      {
+        "src": "assets/projects/chatbot-cover.jpg",
+        "thumbnail": "assets/projects/chatbot-cover-thumb.jpg",
+        "ko": "발표 표지",
+        "en": "Presentation cover",
+        "source": "https://github.com/user-attachments/assets/14abe2b2-8871-495f-98b9-eba171cef34b",
+        "readmeImageIndex": 1
+      },
+      {
+        "src": "assets/projects/chatbot-screen.jpg",
+        "thumbnail": "assets/projects/chatbot-screen-thumb.jpg",
+        "ko": "상담 화면",
+        "en": "Chat interface",
+        "source": "https://github.com/user-attachments/assets/1d09799e-45ce-480a-bac2-b509f768de38",
+        "readmeImageIndex": 3
+      },
+      {
+        "src": "assets/projects/chatbot-architecture.jpg",
+        "thumbnail": "assets/projects/chatbot-architecture-thumb.jpg",
+        "ko": "서비스 구조",
+        "en": "Service architecture",
+        "source": "https://github.com/user-attachments/assets/3ff4bca7-e176-44b9-8da2-889dd9851687",
+        "readmeImageIndex": 6
+      }
+    ]
+  },
+  "planup": {
+    "repo": "PlanUP_frontend_Project",
+    "slides": [
+      {
+        "src": "assets/projects/planup-cover.jpg",
+        "thumbnail": "assets/projects/planup-cover-thumb.jpg",
+        "ko": "발표 표지",
+        "en": "Presentation cover",
+        "source": "https://github.com/user-attachments/assets/31f7e8e5-9f11-48ad-84b4-2d75cfc57c8d",
+        "readmeImageIndex": 0
+      },
+      {
+        "src": "assets/projects/planup-screen.jpg",
+        "thumbnail": "assets/projects/planup-screen-thumb.jpg",
+        "ko": "일정 관리",
+        "en": "Schedule management",
+        "source": "https://github.com/user-attachments/assets/e58e3242-ff2c-41dc-af1d-1cfe494e19a3",
+        "readmeImageIndex": 3
+      },
+      {
+        "src": "assets/projects/planup-checklist.jpg",
+        "thumbnail": "assets/projects/planup-checklist-thumb.jpg",
+        "ko": "체크리스트",
+        "en": "Checklist",
+        "source": "https://github.com/user-attachments/assets/885521d3-3fb3-4552-a014-73f9dfca706b",
+        "readmeImageIndex": 4
+      }
+    ]
+  },
+  "mindglow": {
+    "repo": "MindGlow_Project",
+    "slides": [
+      {
+        "src": "assets/projects/mindglow-cover.jpg",
+        "thumbnail": "assets/projects/mindglow-cover-thumb.jpg",
+        "ko": "발표 표지",
+        "en": "Presentation cover",
+        "source": "https://github.com/user-attachments/assets/7db99ba6-0b5f-4614-970b-66b7e6da15fa",
+        "readmeImageIndex": 0
+      },
+      {
+        "src": "assets/projects/mindglow-chat.jpg",
+        "thumbnail": "assets/projects/mindglow-chat-thumb.jpg",
+        "ko": "실시간 채팅",
+        "en": "Live chat",
+        "source": "https://github.com/user-attachments/assets/d4c23bde-2f05-43be-b49e-d2042dc4e56a",
+        "readmeImageIndex": 14
+      },
+      {
+        "src": "assets/projects/mindglow-diary.jpg",
+        "thumbnail": "assets/projects/mindglow-diary-thumb.jpg",
+        "ko": "일기장",
+        "en": "Personal diary",
+        "source": "https://github.com/user-attachments/assets/6aada36c-f15b-4fdb-b6cb-3fc2553c1287",
+        "readmeImageIndex": 15
+      }
+    ]
+  },
+  "jetson": {
+    "repo": "Future_Automobile_Project",
+    "slides": [
+      {
+        "src": "assets/projects/jetson-cover.jpg",
+        "thumbnail": "assets/projects/jetson-cover-thumb.jpg",
+        "ko": "발표 표지",
+        "en": "Presentation cover",
+        "source": "https://github.com/user-attachments/assets/035dc56c-3e27-473a-a2fc-040a9ebd1d96",
+        "readmeImageIndex": 1
+      },
+      {
+        "src": "assets/projects/jetson-setup.jpg",
+        "thumbnail": "assets/projects/jetson-setup-thumb.jpg",
+        "ko": "실험 환경",
+        "en": "Field setup",
+        "source": "https://github.com/user-attachments/assets/76ece726-ff87-4834-bd94-0abd673c93da",
+        "readmeImageIndex": 14
+      },
+      {
+        "src": "assets/projects/jetson-detection.jpg",
+        "thumbnail": "assets/projects/jetson-detection-thumb.jpg",
+        "ko": "주행 실험",
+        "en": "Road experiment",
+        "source": "https://github.com/user-attachments/assets/27cbf381-3202-47c9-a2ef-fc0f61359145",
+        "readmeImageIndex": 18
+      }
+    ]
+  }
+}
