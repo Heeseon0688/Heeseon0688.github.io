@@ -12,16 +12,17 @@
  <title>Heeseon Im — Software Engineer</title>
  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
  <script>
-  // Restore a chosen light theme before the first paint; new visitors start dark.
+  // Only restore a choice made after the midnight/cyan theme was introduced.
+  // Older saved values belong to the former default and must not override it.
   try {
-   if (localStorage.getItem("portfolio-theme") === "light") {
+   if (localStorage.getItem("portfolio-theme-version") === "midnight-cyan-v1" && localStorage.getItem("portfolio-theme") === "light") {
     document.documentElement.dataset.theme = "light";
     document.querySelector('meta[name="theme-color"]').content = "#F7F9FD";
    }
   } catch { /* Default midnight theme also works without browser storage. */ }
  </script>
- <link rel="stylesheet" href="style.css">
- <script src="script.js" defer></script>
+ <link rel="stylesheet" href="style.css?v=midnight-cyan-v2">
+ <script src="script.js?v=midnight-cyan-v2" defer></script>
 </head>
 <body>
  <a class="skip-link" href="#main" data-ko="본문으로 바로가기" data-en="Skip to content">본문으로 바로가기</a>

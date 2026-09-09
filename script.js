@@ -6,12 +6,18 @@
     set(key, value) { try { localStorage.setItem(key, value); } catch { /* Keep the current view. */ } },
   };
   const root = document.documentElement;
+  const themePreferenceVersion = "midnight-cyan-v1";
   const langToggle = document.getElementById("langToggle");
   const themeToggle = document.getElementById("themeToggle");
   const menuToggle = document.getElementById("menuToggle");
   const nav = document.getElementById("mainNav");
   let language = preference.get("portfolio-language") === "en" ? "en" : "ko";
-  let theme = preference.get("portfolio-theme") === "light" ? "light" : "dark";
+  const hasCurrentThemePreference = preference.get("portfolio-theme-version") === themePreferenceVersion;
+  let theme = hasCurrentThemePreference && preference.get("portfolio-theme") === "light" ? "light" : "dark";
+  if (!hasCurrentThemePreference) {
+    preference.set("portfolio-theme-version", themePreferenceVersion);
+    preference.set("portfolio-theme", theme);
+  }
   let filter = "all";
   const viewer = document.getElementById("imageViewer");
   let activeGallery = null;
