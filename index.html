@@ -21,7 +21,7 @@
    }
   } catch { /* Default midnight theme also works without browser storage. */ }
  </script>
- <link rel="stylesheet" href="style.css?v=research-layout-20260911">
+ <link rel="stylesheet" href="style.css?v=section-intros-20260911">
  <script src="script.js?v=research-layout-20260911" defer></script>
 </head>
 <body>
@@ -75,10 +75,14 @@
       </div>
     </section>
   <section class="projects section-shell" id="projects">
-   <div class="section-label">02 / RESEARCH &amp; PROJECTS</div>
-   <div class="section-heading"><div><h2 data-ko="직접 만들고, 해결한 것들." data-en="Things I built. Problems I solved.">직접 만들고, 해결한 것들.</h2><p class="section-subtitle" data-ko="알고리즘의 구현부터 사용자와 만나는 서비스까지." data-en="From implementing algorithms to building services for people.">알고리즘의 구현부터 사용자와 만나는 서비스까지.</p></div><div class="project-filters" role="group" aria-label="프로젝트 필터"><button type="button" data-filter="all" aria-pressed="true" data-ko="전체" data-en="All work">전체</button><button type="button" data-filter="ai" aria-pressed="false" data-ko="AI · 서비스" data-en="AI & apps">AI · 서비스</button><button type="button" data-filter="systems" aria-pressed="false" data-ko="시스템 · 연구" data-en="Systems & research">시스템 · 연구</button></div></div>
+   <div class="work-toolbar"><div class="section-label">02 / RESEARCH &amp; PROJECTS</div><div class="project-filters" role="group" aria-label="프로젝트 필터"><button type="button" data-filter="all" aria-pressed="true" data-ko="전체" data-en="All work">전체</button><button type="button" data-filter="ai" aria-pressed="false" data-ko="AI · 서비스" data-en="AI & apps">AI · 서비스</button><button type="button" data-filter="systems" aria-pressed="false" data-ko="시스템 · 연구" data-en="Systems & research">시스템 · 연구</button></div></div>
    <p id="filterStatus" class="sr-only" role="status" aria-live="polite"></p>
    <div class="project-grid">
+    <div class="research research-intro" data-project-detail="systems">
+      <div class="section-label">PUBLICATIONS</div>
+      <h2 data-ko="연구로 더 깊이." data-en="A deeper understanding.">연구로 더 깊이.</h2>
+      <p class="section-intro"><span data-ko="서강대학교 대학원에서 " data-en="At Sogang University’s graduate school, I researched ">서강대학교 대학원에서 </span><strong data-ko="고밀도 무선랜 환경의 공간 재사용 성능을 향상시키기 위한 강화학습 기반 통신 알고리즘" data-en="reinforcement learning-based communication algorithms to improve spatial reuse performance in dense WLANs">고밀도 무선랜 환경의 공간 재사용 성능을 향상시키기 위한 강화학습 기반 통신 알고리즘</strong><span data-ko="을 연구했습니다. C/C++·Python 기반 네트워크 시뮬레이터를 구현하고, 다양한 노드 밀집도와 간섭 환경에서 처리량과 공정성을 분석했습니다." data-en=". I implemented a network simulator using C/C++ and Python, and analyzed throughput and fairness across varying node densities and interference conditions.">을 연구했습니다. C/C++·Python 기반 네트워크 시뮬레이터를 구현하고, 다양한 노드 밀집도와 간섭 환경에서 처리량과 공정성을 분석했습니다.</span></p>
+    </div>
 <article class="project project-featured research-card" data-category="systems">
         <div class="project-visual visual-wireless research-diagram">
           <div class="diagram-label" data-ko="연구의 발전 과정" data-en="RESEARCH EVOLUTION">연구의 발전 과정</div>
@@ -98,10 +102,7 @@
           <a class="project-link" href="#research">View Research <span aria-hidden="true">→</span></a>
         </div>
       </article>
-    <section class="research research-details" id="research" data-project-detail="systems">
-      <div class="section-label">PUBLICATIONS</div>
-      <h2 data-ko="연구로 더 깊이." data-en="A deeper understanding.">연구로 더 깊이.</h2>
-      <p class="section-intro"><span data-ko="서강대학교 대학원에서 " data-en="At Sogang University’s graduate school, I researched ">서강대학교 대학원에서 </span><strong data-ko="고밀도 무선랜 환경의 공간 재사용 성능을 향상시키기 위한 강화학습 기반 통신 알고리즘" data-en="reinforcement learning-based communication algorithms to improve spatial reuse performance in dense WLANs">고밀도 무선랜 환경의 공간 재사용 성능을 향상시키기 위한 강화학습 기반 통신 알고리즘</strong><span data-ko="을 연구했습니다. C/C++·Python 기반 네트워크 시뮬레이터를 구현하고, 다양한 노드 밀집도와 간섭 환경에서 처리량과 공정성을 분석했습니다." data-en=". I implemented a network simulator using C/C++ and Python, and analyzed throughput and fairness across varying node densities and interference conditions.">을 연구했습니다. C/C++·Python 기반 네트워크 시뮬레이터를 구현하고, 다양한 노드 밀집도와 간섭 환경에서 처리량과 공정성을 분석했습니다.</span></p>
+    <section class="research research-details" id="research" data-project-detail="systems" aria-label="연구 논문 목록" data-label-ko="연구 논문 목록" data-label-en="Research publications">
 
       <div class="research-list">
         <article>
@@ -130,6 +131,7 @@
         </article>
       </div>
     </section>
+    <div class="section-heading project-intro"><div><h2 data-ko="직접 만들고, 해결한 것들." data-en="Things I built. Problems I solved.">직접 만들고, 해결한 것들.</h2><p class="section-subtitle" data-ko="알고리즘의 구현부터 사용자와 만나는 서비스까지." data-en="From implementing algorithms to building services for people.">알고리즘의 구현부터 사용자와 만나는 서비스까지.</p></div></div>
 <article class="project project-wide" data-category="systems">
  <div class="project-gallery" data-title-ko="Jetson Nano" data-title-en="Jetson Nano">
  <a class="gallery-stage" href="assets/projects/jetson-cover.jpg" target="_blank" rel="noreferrer" aria-haspopup="dialog"><img class="gallery-image" src="assets/projects/jetson-cover.jpg" alt="Jetson Nano — 발표 표지" data-alt-ko="Jetson Nano — 발표 표지" data-alt-en="Jetson Nano — Presentation cover" width="1600" height="900" loading="lazy"><span class="gallery-zoom"><span data-ko="크게 보기" data-en="Enlarge" >크게 보기</span> <span aria-hidden="true">⤢</span></span></a>
