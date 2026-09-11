@@ -35,7 +35,6 @@
     menuToggle.setAttribute("aria-label", en ? `${open ? "Close" : "Open"} menu` : `메뉴 ${open ? "닫기" : "열기"}`);
     nav.setAttribute("aria-label", en ? "Main navigation" : "주요 메뉴");
     document.querySelector(".project-filters").setAttribute("aria-label", en ? "Filter projects" : "프로젝트 필터");
-    document.querySelector(".hero-art").setAttribute("aria-label", en ? "C/C++ and Linux system software, reinforcement learning-based WLAN research and IEEE TWC, and YOLO and Jetson Nano computer vision experience" : "C/C++·Linux 시스템 SW, 강화학습 기반 WLAN 연구와 IEEE TWC, YOLO·Jetson Nano 컴퓨터 비전 경험");
     document.querySelector('.hero-bottom > a').setAttribute("aria-label", en ? "Explore more" : "더 알아보기");
   }
   function applyLanguage() {

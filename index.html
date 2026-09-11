@@ -21,8 +21,8 @@
    }
   } catch { /* Default midnight theme also works without browser storage. */ }
  </script>
- <link rel="stylesheet" href="style.css?v=section-intros-20260911">
- <script src="script.js?v=research-layout-20260911" defer></script>
+ <link rel="stylesheet" href="style.css?v=profile-card-20260911">
+ <script src="script.js?v=profile-card-20260911" defer></script>
 </head>
 <body>
  <a class="skip-link" href="#main" data-ko="본문으로 바로가기" data-en="Skip to content">본문으로 바로가기</a>
@@ -45,11 +45,25 @@
      <div class="tags hero-tags"><span>C/C++</span><span>Python</span><span>Linux</span><span>AI</span><span>System SW</span><span>Computer Vision</span></div>
      <div class="hero-cta"><a class="button button-primary" href="#projects"><span data-ko="프로젝트 보기" data-en="Explore my work">프로젝트 보기</span><span aria-hidden="true">↗</span></a><a class="button button-text" href="https://github.com/Heeseon0688" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
     </div>
-    <div class="hero-art" role="img" aria-label="C/C++·Linux 시스템 SW, 강화학습 기반 WLAN 연구와 IEEE TWC, YOLO·Jetson Nano 컴퓨터 비전 경험">
-     <div class="art-topline"><span>A CONNECTED PRACTICE</span><span class="art-plus" aria-hidden="true">✳</span></div>
-     <div class="orbit-scene" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="orbit-center"><span>h<span class="small-dot">.</span></span></div><div class="orbit-node node-system"><span class="node-icon">{ }</span><span>SYSTEM SW</span></div><div class="orbit-node node-ai"><span class="node-icon">✳</span><span>RL &amp; WLAN</span></div><div class="orbit-node node-app"><span class="node-icon">↗</span><span>COMPUTER VISION</span><span class="node-detail">YOLO · JETSON NANO</span></div><span class="orbit-dot dot-one"></span><span class="orbit-dot dot-two"></span><span class="orbit-star">+</span></div>
-     <div class="art-bottomline"><p>Curiosity into code.<br><em>Code into possibility.</em></p><span class="art-coordinate">C/C++ · LINUX · PYTHON<br>IEEE TWC · JETSON NANO</span></div>
-    </div>
+    <aside class="hero-art profile-card" aria-labelledby="profile-name">
+     <div class="profile-orbits" aria-hidden="true"><span></span><span></span></div>
+     <div class="profile-kicker"><span>ENGINEER PROFILE</span><span class="profile-mark" aria-hidden="true">✳</span></div>
+     <div class="profile-identity">
+      <img class="profile-portrait" src="assets/heeseon-portrait.jpg" alt="임희선 프로필 사진" data-alt-ko="임희선 프로필 사진" data-alt-en="Portrait of Heeseon Im" width="425" height="567" fetchpriority="high">
+      <div class="profile-bio">
+       <span class="profile-english-name">HEESEON IM</span>
+       <h2 id="profile-name" data-ko="임희선" data-en="Heeseon Im">임희선</h2>
+       <p class="profile-role">Software Engineer</p>
+       <div class="profile-degree"><span data-ko="서강대학교 대학원" data-en="Sogang University">서강대학교 대학원</span><strong data-ko="컴퓨터공학 석사 졸업" data-en="M.S. in Computer Science &amp; Engineering">컴퓨터공학 석사 졸업</strong></div>
+      </div>
+     </div>
+     <ul class="profile-expertise">
+      <li><span class="profile-index" aria-hidden="true">01</span><div><h3 data-ko="AI · 무선네트워크 연구" data-en="AI &amp; Wireless Networks">AI · 무선네트워크 연구</h3><p data-ko="강화학습 · WLAN 공간 재사용" data-en="Reinforcement learning · WLAN spatial reuse">강화학습 · WLAN 공간 재사용</p></div><span class="profile-proof">IEEE TWC</span></li>
+      <li><span class="profile-index" aria-hidden="true">02</span><div><h3 data-ko="시스템 소프트웨어" data-en="System Software">시스템 소프트웨어</h3><p>C/C++ · Linux · STM32</p></div><span class="profile-proof" data-ko="장비 제어 · 연동" data-en="Device control">장비 제어 · 연동</span></li>
+      <li><span class="profile-index" aria-hidden="true">03</span><div><h3 data-ko="컴퓨터 비전" data-en="Computer Vision">컴퓨터 비전</h3><p>YOLO · Jetson Nano</p></div><span class="profile-proof" data-ko="실시간 인식 · 추적" data-en="Real-time tracking">실시간 인식 · 추적</span></li>
+     </ul>
+     <div class="profile-footer"><span class="status-dot" aria-hidden="true"></span><span data-ko="연구에서 구현까지, 동작하는 소프트웨어로." data-en="From research to working software.">연구에서 구현까지, 동작하는 소프트웨어로.</span></div>
+    </aside>
    </div>
    <div class="hero-bottom"><span data-ko="탐구하고, 연결하고, 완성합니다." data-en="Explore. Connect. Build.">탐구하고, 연결하고, 완성합니다.</span><div><span>SYSTEMS</span><i></i><span>AI & VISION</span><i></i><span>APPLICATIONS</span></div><a href="#principles" aria-label="더 알아보기">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
   </section>
