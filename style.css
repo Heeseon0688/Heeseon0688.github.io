@@ -190,6 +190,11 @@ section h2 { font-size: clamp(27px, 2.8vw, 38px); font-weight: 600; line-height:
 .time { font-size: 11px; color: var(--muted); padding-top: 6px; letter-spacing: .2px; }
 .timeline h3 { font-size: 18px; font-weight: 600; margin: 0 0 11px; letter-spacing: -.5px; word-break: keep-all; }
 .timeline p { font-size: 13px; color: var(--muted); max-width: 780px; margin: 0; word-break: keep-all; }
+.timeline p + p { margin-top: 12px; }
+.timeline-body strong { color: var(--ink); font-weight: 600; }
+.experience-details { max-width: 780px; padding-left: 20px; margin: 14px 0 0; font-size: 13px; color: var(--muted); word-break: keep-all; }
+.experience-details li + li { margin-top: 9px; }
+.timeline-body .tags { margin-top: 18px; }
 .skills { padding-top: 0; }
 .skill-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
 .skill-grid article { border: 1px solid var(--line); background: var(--surface); border-radius: 12px; padding: 23px; }
