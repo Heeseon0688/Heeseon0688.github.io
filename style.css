@@ -441,6 +441,7 @@ body:has(.image-viewer[open]) { overflow: hidden; }
 .profile-expertise h3 { font-size: 15px; line-height: 1.5; font-weight: 600; margin: 0 0 4px; color: var(--ink); letter-spacing: -.3px; }
 .profile-expertise p { font-size: 11px; color: var(--art-muted); line-height: 1.6; margin: 0; }
 .profile-proof { border: 1px solid var(--node-line); border-radius: 6px; padding: 5px 7px; background: var(--art-node); color: var(--art-ink); font-size: 9px; font-weight: 600; white-space: nowrap; }
+.profile-proof.profile-proof-wide { grid-column: 2 / -1; justify-self: start; max-width: 100%; white-space: normal; }
 .profile-footer { display: flex; gap: 10px; align-items: center; margin-top: -12px; font-size: 10px; line-height: 1.7; color: var(--art-muted); }
 .profile-footer .status-dot { flex-shrink: 0; }
 @media (min-width: 761px) and (max-width: 1050px) {
