@@ -177,7 +177,7 @@ section h2 { font-size: clamp(27px, 2.8vw, 38px); font-weight: 600; line-height:
 .research-list article { display: grid; grid-template-columns: 75px 1fr; gap: 30px; padding: 27px 0; border-top: 1px solid var(--line); }
 .research-list article:last-child { border-bottom: 1px solid var(--line); }
 .paper-no { font-family: Georgia, serif; font-style: italic; font-size: 21px; color: var(--accent); padding-top: 10px; }
-.paper-venue { display: block; font-size: 8px; color: var(--muted); letter-spacing: 1px; margin-bottom: 7px; }
+.paper-venue { display: block; font-size: 13px; font-weight: 550; line-height: 1.6; color: var(--accent); letter-spacing: .2px; margin-bottom: 12px; }
 .research-list h3 { font-size: 18px; font-weight: 550; line-height: 1.6; letter-spacing: -.3px; margin: 0 0 8px; }
 .paper-link:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
 .research-list p { font-size: 12px; color: var(--muted); margin: 0; }
@@ -275,7 +275,7 @@ footer { width: min(var(--max), calc(100% - 96px)); margin: auto; border-top: 1p
   .project-filters button { min-height: 40px; font-size: 11px; }
   .research-list article { grid-template-columns: 48px 1fr; gap: 16px; }
   .research-list h3 { font-size: 16px; }
-  .paper-venue { font-size: 7px; }
+  .paper-venue { font-size: 12px; }
   .paper-no { font-size: 18px; }
   .experience { padding-top: 0; }
   .timeline::before { left: 4px; }
