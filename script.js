@@ -63,6 +63,9 @@
       project.hidden = !show;
       if (show) count++;
     });
+    document.querySelectorAll("[data-project-detail]").forEach(detail => {
+      detail.hidden = filter !== "all" && detail.dataset.projectDetail !== filter;
+    });
     document.querySelectorAll("[data-filter]").forEach(button => {
       button.setAttribute("aria-pressed", String(button.dataset.filter === filter));
     });
@@ -81,6 +84,16 @@
   });
   menuToggle.addEventListener("click", () => setMenu(menuToggle.getAttribute("aria-expanded") !== "true"));
   nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => setMenu(false)));
+  function revealLinkedResearch() {
+    if (document.getElementById("research").hidden) {
+      filter = "all";
+      applyFilter();
+    }
+  }
+  document.querySelectorAll('a[href="#research"]').forEach(link => link.addEventListener("click", revealLinkedResearch));
+  window.addEventListener("hashchange", () => {
+    if (location.hash === "#research") revealLinkedResearch();
+  });
   document.addEventListener("keydown", event => {
     if (event.key === "Escape" && menuToggle.getAttribute("aria-expanded") === "true") {
       setMenu(false);
@@ -163,7 +176,7 @@
         });
       });
     }, { rootMargin: "-15% 0px -55% 0px", threshold: 0 });
-    document.querySelectorAll("main > section[id]").forEach(section => observer.observe(section));
+    document.querySelectorAll("main section[id]").forEach(section => observer.observe(section));
   }
   document.getElementById("year").textContent = new Date().getFullYear();
   applyLanguage();

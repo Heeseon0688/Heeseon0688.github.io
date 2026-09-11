@@ -133,10 +133,10 @@ h1 { margin: 0; font-size: clamp(40px, 4.4vw, 64px); font-weight: 650; line-heig
 section h2 { font-size: clamp(27px, 2.8vw, 38px); font-weight: 600; line-height: 1.4; letter-spacing: -1.6px; margin: 0 0 35px; word-break: keep-all; }
 .manifesto { padding-bottom: 80px; }
 .principle-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
-.principle-grid article { padding: 27px 0 0; border-top: 1px solid var(--line); }
-.principle-grid article > span { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 10px; background: var(--accent-soft); color: var(--accent); font-family: Georgia, serif; font-size: 16px; font-style: italic; }
-.principle-grid h3 { font-size: 17px; font-weight: 600; letter-spacing: -.5px; margin: 18px 0 11px; }
-.principle-grid p { font-size: 13px; color: var(--muted); line-height: 1.9; margin: 0; word-break: keep-all; }
+.principle-grid article { display: grid; grid-template-columns: 36px minmax(0, 1fr); align-content: start; gap: 12px; padding: 27px 0 0; border-top: 1px solid var(--line); }
+.principle-grid article > span { display: grid; place-items: center; align-self: center; width: 36px; height: 36px; border-radius: 10px; background: var(--accent-soft); color: var(--accent); font-family: Georgia, serif; font-size: 16px; font-style: italic; }
+.principle-grid h3 { align-self: center; font-size: 17px; font-weight: 600; letter-spacing: -.5px; margin: 0; }
+.principle-grid p { grid-column: 1 / -1; font-size: 13px; color: var(--muted); line-height: 1.9; margin: 0; word-break: keep-all; }
 .projects { padding-top: 30px; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 32px; }
 .section-heading h2 { margin-bottom: 10px; }
@@ -171,22 +171,23 @@ section h2 { font-size: clamp(27px, 2.8vw, 38px); font-weight: 600; line-height:
 .project-featured .project-link { margin: 0 0 22px; }
 .project-featured .tags { margin-top: auto; }
 .research-card { border-color: var(--node-line); }
-.research-card .research-diagram { min-height: 520px; padding: 32px; gap: 24px; background-image: radial-gradient(circle, var(--orbit-line) 1px, transparent 1px), radial-gradient(ellipse at center, var(--art-highlight), transparent 75%); background-size: 24px 24px, 100% 100%; }
+.research-card .research-diagram { min-height: 0; padding: 28px 32px; gap: 20px; justify-content: center; background-image: radial-gradient(circle, var(--orbit-line) 1px, transparent 1px), radial-gradient(ellipse at center, var(--art-highlight), transparent 75%); background-size: 24px 24px, 100% 100%; }
 .diagram-label { font-size: 10px; font-weight: 600; letter-spacing: 1.5px; }
-.research-flow { list-style: none; padding: 0; margin: 0; display: grid; flex: 1; gap: 30px; }
-.research-flow li { position: relative; display: flex; align-items: center; gap: 16px; padding: 17px 18px; border: 1px solid var(--orbit-line); border-radius: 14px; background: var(--art-node); box-shadow: 0 6px 20px var(--node-shadow); }
-.research-flow li:not(:last-child)::after { content: "↓"; position: absolute; top: 100%; left: 34px; height: 30px; line-height: 30px; font-size: 22px; color: var(--art-muted); }
+.research-flow { list-style: none; padding: 0; margin: 0; display: grid; flex: 0 0 auto; gap: 24px; }
+.research-flow li { position: relative; display: flex; align-items: center; gap: 16px; padding: 12px 16px; border: 1px solid var(--orbit-line); border-radius: 14px; background: var(--art-node); box-shadow: 0 6px 20px var(--node-shadow); }
+.research-flow li:not(:last-child)::after { content: "↓"; position: absolute; top: 100%; left: 32px; height: 24px; line-height: 24px; font-size: 20px; color: var(--art-muted); }
 .flow-number { align-self: start; padding-top: 2px; color: var(--art-muted); font: 12px/1.8 ui-monospace, monospace; }
 .flow-copy { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
 .flow-copy strong { font-size: 16px; font-weight: 600; line-height: 1.4; }
 .flow-copy > span { font-size: 13px; color: var(--art-muted); }
 .flow-icon { width: 48px; height: 48px; flex-shrink: 0; stroke: var(--art-ink); stroke-width: 1.5; }
 .flow-icon circle { fill: var(--art-node); }
-.research-card .project-body { justify-content: flex-start; padding: 32px; }
+.research-card .project-body { justify-content: center; padding: 32px; }
 .research-card .project-meta { font-size: 10px; }
 .research-card .tags { margin-top: 8px; }
 .research-card .project-link { margin: 28px 0 0; font-size: 13px; color: var(--accent); }
 .research { border-top: 1px solid var(--line); }
+.research-details { grid-column: 1 / -1; min-width: 0; padding: 28px 0 16px; border-top: 0; }
 .research .section-intro { max-width: 700px; margin: -15px 0 36px; font-size: 14px; line-height: 1.9; color: var(--muted); word-break: keep-all; }
 .research-list article { display: grid; grid-template-columns: 75px 1fr; gap: 30px; padding: 27px 0; border-top: 1px solid var(--line); }
 .research-list article:last-child { border-bottom: 1px solid var(--line); }
@@ -280,9 +281,8 @@ footer { width: min(var(--max), calc(100% - 96px)); margin: auto; border-top: 1p
   .hero-bottom { flex-direction: column; align-items: start; margin-top: 32px; gap: 10px; padding: 18px 0; }
   .hero-bottom > div { gap: 13px; }
   .principle-grid { grid-template-columns: 1fr; gap: 22px; }
-  .principle-grid article { display: grid; grid-template-columns: 36px 1fr; gap: 0 16px; padding-top: 22px; }
-  .principle-grid article > span { grid-row: 1 / 3; }
-  .principle-grid h3 { margin: 3px 0 8px; }
+  .principle-grid article { grid-template-columns: 36px minmax(0, 1fr); gap: 10px 16px; padding-top: 22px; }
+  .principle-grid h3 { margin: 0; }
   .principle-grid p { grid-column: 2; }
   .projects { padding-top: 0; }
   section h2 { font-size: 29px; letter-spacing: -1.3px; }
@@ -290,7 +290,7 @@ footer { width: min(var(--max), calc(100% - 96px)); margin: auto; border-top: 1p
   .project-featured { display: block; }
   .project-featured .project-visual { min-height: auto; padding: 17px 24px 22px; }
   .research-card .research-diagram { min-height: auto; padding: 24px; }
-  .research-flow li { padding: 14px 12px; gap: 10px; }
+  .research-flow li { padding: 12px; gap: 10px; }
   .flow-copy strong { font-size: 14px; }
   .flow-icon { width: 36px; height: 36px; }
   .project-visual img, .project-featured .project-visual img { height: 225px; }
