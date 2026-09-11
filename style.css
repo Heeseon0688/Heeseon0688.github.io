@@ -88,7 +88,8 @@ h1 { margin: 0; font-size: clamp(40px, 4.4vw, 64px); font-weight: 650; line-heig
 .hero-role { display: flex; align-items: center; gap: 12px; font-size: 13px; margin: 27px 0 15px; }
 .hero-role strong { font-size: 15px; font-weight: 600; }
 .hero-role > span { width: 22px; height: 1px; background: var(--line); }
-.hero-copy { color: var(--muted); max-width: 400px; line-height: 1.95; font-size: 14px; word-break: keep-all; }
+.hero-copy { color: var(--muted); max-width: 460px; margin: 24px 0 16px; line-height: 1.95; font-size: 14px; word-break: keep-all; }
+.hero-tags { max-width: 460px; }
 .hero-cta { display: flex; gap: 15px; align-items: center; margin-top: 26px; }
 .button { display: inline-flex; justify-content: center; align-items: center; gap: 22px; padding: 13px 21px; border-radius: 8px; font-size: 12px; font-weight: 600; transition: background .2s, transform .2s; }
 .button:hover { transform: translateY(-2px); }
@@ -305,6 +306,7 @@ footer { width: min(var(--max), calc(100% - 96px)); margin: auto; border-top: 1p
   .header-actions { gap: 5px; }
   .section-shell, footer { width: calc(100% - 32px); }
   h1 { font-size: 36px; }
+  html[lang="en"] h1 { font-size: 32px; }
   .hero-art { padding: 20px; }
   .art-bottomline p { font-size: 22px; }
   .orbit-scene { inset: 50px 0 112px; }
