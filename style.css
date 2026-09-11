@@ -173,7 +173,7 @@ section h2 { font-size: clamp(27px, 2.8vw, 38px); font-weight: 600; line-height:
 .research-card { border-color: var(--node-line); }
 .research-card .research-diagram { min-height: 520px; padding: 32px; gap: 24px; background-image: radial-gradient(circle, var(--orbit-line) 1px, transparent 1px), radial-gradient(ellipse at center, var(--art-highlight), transparent 75%); background-size: 24px 24px, 100% 100%; }
 .diagram-label { font-size: 10px; font-weight: 600; letter-spacing: 1.5px; }
-.research-flow { list-style: none; padding: 0; margin: 0; display: grid; gap: 30px; }
+.research-flow { list-style: none; padding: 0; margin: 0; display: grid; flex: 1; gap: 30px; }
 .research-flow li { position: relative; display: flex; align-items: center; gap: 16px; padding: 17px 18px; border: 1px solid var(--orbit-line); border-radius: 14px; background: var(--art-node); box-shadow: 0 6px 20px var(--node-shadow); }
 .research-flow li:not(:last-child)::after { content: "↓"; position: absolute; top: 100%; left: 34px; height: 30px; line-height: 30px; font-size: 22px; color: var(--art-muted); }
 .flow-number { align-self: start; padding-top: 2px; color: var(--art-muted); font: 12px/1.8 ui-monospace, monospace; }
@@ -182,7 +182,7 @@ section h2 { font-size: clamp(27px, 2.8vw, 38px); font-weight: 600; line-height:
 .flow-copy > span { font-size: 13px; color: var(--art-muted); }
 .flow-icon { width: 48px; height: 48px; flex-shrink: 0; stroke: var(--art-ink); stroke-width: 1.5; }
 .flow-icon circle { fill: var(--art-node); }
-.research-card .project-body { justify-content: center; }
+.research-card .project-body { justify-content: flex-start; padding: 32px; }
 .research-card .project-meta { font-size: 10px; }
 .research-card .tags { margin-top: 8px; }
 .research-card .project-link { margin: 28px 0 0; font-size: 13px; color: var(--accent); }
