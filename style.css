@@ -428,7 +428,7 @@ body:has(.image-viewer[open]) { overflow: hidden; }
 .profile-orbits span { position: absolute; width: 125%; height: 58%; left: -12%; top: 4%; border: 1px solid var(--orbit-line); border-radius: 50%; transform: rotate(-32deg); }
 .profile-orbits span + span { top: 10%; transform: rotate(32deg); }
 .profile-kicker { display: flex; align-items: center; justify-content: space-between; font-size: 9px; font-weight: 650; letter-spacing: 1.8px; }
-.profile-mark { font-size: 26px; line-height: 1; }
+.profile-mark { display: block; width: 30px; height: 30px; flex-shrink: 0; }
 .profile-identity { display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 24px; align-items: center; }
 .profile-portrait { display: block; width: 100%; height: auto; border-radius: 15px; border: 1px solid var(--node-line); background: #fff; }
 .profile-english-name { font-size: 9px; letter-spacing: 1.8px; color: var(--art-muted); }
