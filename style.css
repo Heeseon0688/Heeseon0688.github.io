@@ -224,6 +224,12 @@ section h2 { font-size: clamp(27px, 2.8vw, 38px); font-weight: 600; line-height:
 .experience-details { max-width: 780px; padding-left: 20px; margin: 14px 0 0; font-size: 13px; color: var(--muted); word-break: keep-all; }
 .experience-details li + li { margin-top: 9px; }
 .timeline-body .tags { margin-top: 18px; }
+.language-qualification { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 32px; padding: 20px 24px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.language-qualification h3 { margin: 0; color: var(--muted); font-size: 13px; font-weight: 500; }
+.language-qualification p { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 16px; margin: 0; font-size: 15px; }
+.language-exam { font-weight: 600; }
+.language-qualification strong { color: var(--accent); font-weight: 600; }
+.language-qualification strong span { font-size: 13px; font-weight: 400; }
 .skills { padding-top: 0; }
 .skill-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
 .skill-grid article { border: 1px solid var(--line); background: var(--surface); border-radius: 12px; padding: 23px; }
