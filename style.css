@@ -392,6 +392,7 @@ footer { width: min(var(--max), calc(100% - 96px)); margin: auto; border-top: 1p
 .repo-provider { display: block; margin-bottom: 4px; color: var(--muted); font-size: 8px; letter-spacing: 1px; }
 .repo-detail strong { display: block; font-size: 12px; font-weight: 600; overflow-wrap: anywhere; line-height: 1.5; }
 .repo-arrow { margin-left: auto; flex-shrink: 0; }
+.repo-card + .repo-card { margin-top: 10px; }
 .project-resources { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 12px 2px 0; }
 .project-resources a { font-size: 11px; color: var(--muted); padding: 4px 0; text-underline-offset: 4px; }
 .project-resources a:hover { color: var(--ink); text-decoration: underline; }
