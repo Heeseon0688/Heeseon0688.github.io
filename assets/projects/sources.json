@@ -143,5 +143,31 @@
         "readmeImageIndex": 18
       }
     ]
+  },
+  "smartorder": {
+    "repo": "smartorder-ai",
+    "slides": [
+      {
+        "src": "assets/projects/smartorder-service.jpg",
+        "thumbnail": "assets/projects/smartorder-service-thumb.jpg",
+        "ko": "서비스 화면",
+        "en": "Service interface",
+        "source": "Playwright capture of the SmartOrder AI admin dashboard and mobile ordering screen (demo data)"
+      },
+      {
+        "src": "assets/projects/smartorder-ai.jpg",
+        "thumbnail": "assets/projects/smartorder-ai-thumb.jpg",
+        "ko": "AI 매출 분석",
+        "en": "AI sales analysis",
+        "source": "Playwright capture of the SmartOrder AI insight page (demo data, statistics mode)"
+      },
+      {
+        "src": "assets/projects/smartorder-architecture.jpg",
+        "thumbnail": "assets/projects/smartorder-architecture-thumb.jpg",
+        "ko": "시스템 구조",
+        "en": "System architecture",
+        "source": "Architecture diagram rendered from HTML for this portfolio"
+      }
+    ]
   }
 }
