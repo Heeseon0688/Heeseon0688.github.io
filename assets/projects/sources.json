@@ -169,5 +169,31 @@
         "source": "Architecture diagram rendered from HTML for this portfolio"
       }
     ]
+  },
+  "clouddocs": {
+    "repo": "azure-clouddocs",
+    "slides": [
+      {
+        "src": "assets/projects/clouddocs-dashboard.jpg",
+        "thumbnail": "assets/projects/clouddocs-dashboard-thumb.jpg",
+        "ko": "대시보드",
+        "en": "Dashboard",
+        "source": "Headless Chrome capture of the Azure CloudDocs dashboard (demo data, Azurite)"
+      },
+      {
+        "src": "assets/projects/clouddocs-documents.jpg",
+        "thumbnail": "assets/projects/clouddocs-documents-thumb.jpg",
+        "ko": "문서 관리 화면",
+        "en": "Document management",
+        "source": "Headless Chrome capture of the Azure CloudDocs document list (demo data, Azurite)"
+      },
+      {
+        "src": "assets/projects/clouddocs-architecture.jpg",
+        "thumbnail": "assets/projects/clouddocs-architecture-thumb.jpg",
+        "ko": "시스템 구조",
+        "en": "System architecture",
+        "source": "Architecture diagram rendered from HTML for this portfolio"
+      }
+    ]
   }
 }
